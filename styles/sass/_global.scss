@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body, input, button, a {
+    font-family: 'Pompiere', cursive;
+}
+
+h1, h2, h3 {
+    font-family: 'Lato', sans-serif;
+}
+
+img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+button {
+	background: none;
+	border: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+.wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+}

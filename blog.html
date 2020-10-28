@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pompiere&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <title>Blog</title>
 </head>
@@ -69,14 +70,14 @@
                     <div><img src="./shoe-kloset/comment-1.jpg" alt="comment"></div>
                     <div>
                         <time pubdate datetime="2019-11-21">Tuesday November 21th, 2019</time>
-                        <address> by <a rel="author" href="#">Jeremy</a></address>
+                        <address class="author"> by <a rel="author" href="#">Jeremy</a></address>
                     </div>
                 </li>
                 <li>
                     <div><img src="" alt=""></div>
                     <div>
                         <time pubdate datetime="2019-11-10">Wednesday November 10th, 2019</time>
-                        <address> by <a rel="author" href="#">Julia</a></address>
+                        <address class="author"> by <a rel="author" href="#">Julia</a></address>
                     </div>
                 </li>
             </ol>
@@ -87,8 +88,7 @@
                 <input type="email" name="email" id="email" placeholder="Email addres">
                 <label for="comment"></label>
                 <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
-                <label for="submit"></label>
-                <input type="submit" value="Comment" id="submit">
+                <button type="submit">Comment</button>
             </form>
         </section>
     </main>
