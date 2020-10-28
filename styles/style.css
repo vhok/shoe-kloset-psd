@@ -240,18 +240,6 @@ html {
   padding: 0;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-body, input, button, a {
-  font-family: 'Pompiere', cursive;
-}
-
-h1, h2, h3 {
-  font-family: 'Lato', sans-serif;
-}
-
 img {
   width: 100%;
   display: block;
@@ -278,12 +266,99 @@ ul, ol {
   margin: 0 auto;
 }
 
+.container {
+  padding: 0 7%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body, input, button, a {
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Pompiere', cursive;
+}
+
+.font--logo {
+  font-size: 3.58rem;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 1.1px;
+}
+
+.font--nav {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.font--footer {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+}
+
+.font--button {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
 .hero {
   background-image: url("./../shoe-kloset/header-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 50vh;
+  position: relative;
 }
 
 .info {
   background-color: #FAE5FF;
   height: 50vh;
+}
+
+.hero__div-img-shoe-balls {
+  position: absolute;
+  right: 0;
+  top: 13vh;
+  width: 45%;
+  min-width: 600px;
+}
+
+.hero__container-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+}
+
+.hero__container-nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.hero__container-nav a {
+  color: black;
+  padding: 5px 10px;
+}
+
+.hero__container-nav a:focus, .hero__container-nav a:hover {
+  color: white;
+  background-color: #4C0341;
+}
+
+.hero__container-nav h3 {
+  width: calc( 2rem * 11 / 3);
 }

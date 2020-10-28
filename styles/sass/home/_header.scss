@@ -1,9 +1,49 @@
+// ******* PRIMARY CONTAINERS OF HEADER *******
 .hero {
     background-image: url('./../shoe-kloset/header-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 50vh;
+    position: relative;
 }
 
 .info {
     background-color: $mauve;
     height: 50vh;
+}
+
+// ******* IMAGES *******
+.hero__div-img-shoe-balls {
+    position: absolute;
+    right: 0;
+    top: 13vh;
+    width: 45%;
+    min-width: 600px;
+}
+
+// ******* NAVIGATION, MENUS, BUTTONS, ANCHORS *******
+.hero__container-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.hero__container-nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.hero__container-nav a {
+    color: black;
+    padding: 5px 10px;
+}
+
+.hero__container-nav a:focus, .hero__container-nav a:hover {
+    color: white;
+    background-color: $plum;
+}
+
+.hero__container-nav h3 {
+    // Generating some reasonable number that will break the logo on to new line.
+    width: calc( 2rem * 11 / 3 );
 }

@@ -1,2 +1,48 @@
+html {
+    font-size: 62.5%;
+}
 
+body, input, button, a {
+    font-family: 'Lato', sans-serif;
+}
 
+h1, h2, h3 {
+    font-family: 'Pompiere', cursive;
+}
+
+// ******* TEXT STYLE CATALOG *******
+
+// Non-heading modifiers
+.font--logo {
+    font-size: 3.58rem;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 1.1px;
+}
+
+.font--nav {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 1px;
+    text-align: center;
+
+    text-transform: uppercase;
+}
+
+.font--footer {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+}
+
+.font--button {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+// Heading modifiers (Descending order for size of font)
