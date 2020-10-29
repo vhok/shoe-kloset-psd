@@ -3,22 +3,32 @@
     background-image: url('./../shoe-kloset/header-image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vh;
-    position: relative;
+    background-position-x: 55%;
+    min-height: 50vh;
 }
 
 .info {
     background-color: $mauve;
-    height: 50vh;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
 }
 
 // ******* IMAGES *******
 .hero__div-img-shoe-balls {
     position: absolute;
     right: 0;
-    top: 13vh;
-    width: 45%;
-    min-width: 600px;
+    top: 11vh;
+    width: 50vh;
 }
 
 // ******* NAVIGATION, MENUS, BUTTONS, ANCHORS *******
@@ -43,7 +53,38 @@
     background-color: $plum;
 }
 
+// FONT COLOUR AND POSITIONING
+
 .hero__container-nav h3 {
     // Generating some reasonable number that will break the logo on to new line.
     width: calc( 2rem * 11 / 3 );
+}
+
+.hero h1 {
+    color: $plum;
+    width: calc( 11rem * 18 / 6);
+    margin-top: 105px;
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 10;
+}
+
+.info h2 {
+    color: $plum;
+    text-transform: uppercase;
+}
+
+.info p {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-top: 25px;
+}
+
+.info a {
+    background-color: $plum;
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 7px 25px;
+    margin-top: 30px;
 }
