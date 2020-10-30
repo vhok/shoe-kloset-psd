@@ -1,88 +1,69 @@
-// ******* PRIMARY CONTAINERS OF HEADER *******
-.hero {
-    background-image: url('./../shoe-kloset/header-image.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: 55%;
-    min-height: 50vh;
-}
+.home__body {
 
-.info {
-    background-color: $mauve;
-    min-height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    // ******* PRIMARY CONTAINERS OF HEADER *******
+    .hero {
+        background-image: url('./../shoe-kloset/header-image.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: 55%;
+        min-height: 50vh;
+    }
 
-.info div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-}
+    .info {
+        background-color: $mauve;
+        min-height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-// ******* IMAGES *******
-.hero__div-img-shoe-balls {
-    position: absolute;
-    right: 0;
-    top: 11vh;
-    width: 50vh;
-}
+    .info div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
 
-// ******* NAVIGATION, MENUS, BUTTONS, ANCHORS *******
-.hero__container-nav {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-}
+    // ******* IMAGES *******
+    .hero__div-img-shoe-balls {
+        position: absolute;
+        right: 0;
+        top: 11vh;
+        width: 50vh;
+    }
 
-.hero__container-nav li {
-    display: inline-block;
-    margin: 0 10px;
-}
+    // ******* NAVIGATION, MENUS, BUTTONS, ANCHORS *******
 
-.hero__container-nav a {
-    color: black;
-    padding: 5px 10px;
-}
+    // See _global.scss for more details
 
-.hero__container-nav a:focus, .hero__container-nav a:hover {
-    color: white;
-    background-color: $plum;
-}
+    // ******* FONT COLOUR AND POSITIONING *******
+    .hero h1 {
+        color: $plum;
+        width: calc( 11rem * 18 / 6);
+        margin-top: 105px;
+        padding-bottom: 10px;
+        position: relative;
+        z-index: 10;
+    }
 
-// ******* FONT COLOUR AND POSITIONING *******
+    .info h2 {
+        color: $plum;
+        text-transform: uppercase;
+    }
 
-.hero__container-nav h3 {
-    // Generating some reasonable number that will break the logo on to new line.
-    width: calc( 2rem * 11 / 3 );
-}
+    .info p {
+        text-align: center;
+        margin-top: 25px;
+    }
 
-.hero h1 {
-    color: $plum;
-    width: calc( 11rem * 18 / 6);
-    margin-top: 105px;
-    padding-bottom: 10px;
-    position: relative;
-    z-index: 10;
-}
+    .info a {
+        background-color: $plum;
+        color: #FFF;
+        text-transform: uppercase;
+        padding: 7px 25px;
+        margin-top: 30px;
+    }
 
-.info h2 {
-    color: $plum;
-    text-transform: uppercase;
-}
-
-.info p {
-    text-align: center;
-    margin-top: 25px;
-}
-
-.info a {
-    background-color: $plum;
-    color: #FFF;
-    text-transform: uppercase;
-    padding: 7px 25px;
-    margin-top: 30px;
+    
 }

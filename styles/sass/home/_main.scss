@@ -1,158 +1,113 @@
-// ******* PRIMARY CONTAINERS OF MAIN *******
-.products {
-    position: relative;
-}
+.home__body {
 
-.products .wrapper {
-    display: flex;
-}
+    // ******* PRIMARY CONTAINERS OF MAIN *******
+    .products {
+        position: relative;
+    }
 
-.products div:nth-child(2) {
-    justify-content: flex-end;
-}
+    .products .wrapper {
+        display: flex;
+    }
 
-.products div:nth-child(4) {
-    justify-content: flex-start;
-} 
+    .products div:nth-child(2) {
+        justify-content: flex-end;
+    }
 
-.products__div-text-left, .products__div-text-right {
-    width: 50%;
-}
+    .products div:nth-child(4) {
+        justify-content: flex-start;
+    } 
 
-.products__div-text-left {
-    padding: 55px 0 80px 70px;
-}
+    .products__div-text-left, .products__div-text-right {
+        width: 50%;
+    }
 
-.products__div-text-right {
-    padding: 55px 70px 40px 0;
-    text-align: right;
-}
+    .products__div-text-left {
+        padding: 55px 0 80px 70px;
+    }
 
-.outreach {
-    background-color: $mauve;
-    padding-top: 120px;
-}
+    .products__div-text-right {
+        padding: 55px 70px 40px 0;
+        text-align: right;
+    }
 
-.outreach__ul-icons {
-    display: flex;
-    flex-wrap: wrap;
-}
+    .outreach {
+        background-color: $mauve;
+        padding-top: 120px;
+    }
 
-.outreach__ul-icons li {
-    width: 50%;
-    display: flex;
-}
+    .outreach__ul-icons {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-.outreach__div-text {
-    display: inline-block;
-    width: 85%;
-    margin-left: 20px;
-    margin-bottom: 50px;
-}
+    .outreach__ul-icons li {
+        width: 50%;
+        display: flex;
+    }
 
-.popular .wrapper {
-    padding-top: 100px;
-    padding-bottom: 85px;
-    display: flex;
-}
+    .outreach__div-text {
+        display: inline-block;
+        width: 85%;
+        margin-left: 20px;
+        margin-bottom: 50px;
+    }
 
-.popular__div-text {
-    padding-left: 100px;
-}
+    // ******* IMAGES *******
+    .products__div-img-left, .products__div-img-right {
+        width: 40vw;
+        min-width: 450px;
+        max-width: 550px;
+        position: absolute;
+    }
 
-footer .wrapper {
-    display: flex;
-    background-color: $mauve;
-    padding-top: 75px;
-    padding-bottom: 85px;
-}
-// ******* IMAGES *******
-.products__div-img-left, .products__div-img-right {
-    width: 40vw;
-    min-width: 450px;
-    max-width: 550px;
-    position: absolute;
-}
+    .products__div-img-left {
+        left: 0;
+        top: -50px;
+        box-shadow: 30px 25px $orange;
+    }
 
-.products__div-img-left {
-    left: 0;
-    top: -50px;
-    box-shadow: 30px 25px $orange;
-}
+    .products__div-img-right {
+        right: 0;
+        bottom: -50px;
+        box-shadow: -30px 25px $orange;
+    }
 
-.products__div-img-right {
-    right: 0;
-    bottom: -50px;
-    box-shadow: -30px 25px $orange;
-}
 
-.popular__div-bg-oxford {
-    background-image: url(./../shoe-kloset/banner.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 30vh;
-}
+    // ******* NAVIGATION, MENUS, BUTTONS, ANCHORS *******
+    .products a {
+        background-color: $brown;
+        color: white;
+        text-transform: uppercase;
+        padding: 10px 15px;
+    }
 
-.popular__div-img-platform {
-    box-shadow: 30px 30px $orange;
-    min-width: 280px;
-    max-height: 280px;
-    position: relative;
-    top: -30px;
-}
+    // ******* FONT COLOUR AND POSITIONING *******
+    .products h2 {
+        text-transform: uppercase;
+    }
 
-footer .footer__div-img:nth-child(2) {
-    margin: 0 35px;
-}
+    .products__div-text-right h2 {
+        text-align: right;
+    }
+    .products p {
+        margin: 20px 0;
+    }
 
-// ******* NAVIGATION, MENUS, BUTTONS, ANCHORS *******
-.products a, .popular a {
-    background-color: $brown;
-    color: white;
-    text-transform: uppercase;
-    padding: 10px 15px;
-}
+    .outreach__ul-icons i {
+        background-color: $plum;
+        display: inline-block;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 2.8rem;
+        min-height: 5.5rem;
+        min-width: 5.5rem;
+        line-height: 5.5rem;
+        align-self: flex-start;
+    }
 
-// ******* FONT COLOUR AND POSITIONING *******
-.products h2 {
-    text-transform: uppercase;
-}
-
-.products__div-text-right h2 {
-    text-align: right;
-}
-.products p {
-    margin: 20px 0;
-}
-
-.popular p {
-    margin-bottom: 20px;
-} 
-
-.outreach__ul-icons i {
-    background-color: $plum;
-    display: inline-block;
-    color: white;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 2.8rem;
-    min-height: 5.5rem;
-    min-width: 5.5rem;
-    line-height: 5.5rem;
-    align-self: flex-start;
-}
-
-.outreach__ul-icons h2, .popular__div-text h2 {
-    text-transform: uppercase;
-}
-
-footer p {
-    text-align: center;
-    background-color: $brown;
-    color: #fff;
-    padding: 7px 0;
-}
-
-footer a {
-    color: #fff;
+    .outreach__ul-icons h2, .popular__div-text h2 {
+        text-transform: uppercase;
+    }
+    
 }

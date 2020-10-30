@@ -1,3 +1,11 @@
+// TEMPLATES FOR PARTIALS
+// ******* PRIMARY CONTAINERS OF MAIN *******
+// ******* IMAGES *******
+// ******* NAVIGATION, MENUS, BUTTONS, ANCHORS *******
+// ******* FONT COLOUR AND POSITIONING *******
+
+
+// ******* GLOBAL DEFAULT STYLE DECLARATIONS *******
 * {
     margin: 0;
     padding: 0;
@@ -38,10 +46,61 @@ html {
     font-size: 62.5%;
 }
 
-
 .wrapper {
     max-width: $wrapper-max;
     margin: 0 auto;
     position: relative;
     padding: 0 7%;
+}
+
+// ******* GLOBAL MIXINS *******
+
+// Header navigation (desktop)
+@mixin header-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+@mixin header-li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+@mixin header-a {
+    color: black;
+    padding: 5px 10px;
+}
+
+@mixin header-hover-focus {
+    color: white;
+    background-color: $plum;
+}
+
+@mixin header-logo-sizing {
+    // Generating some reasonable number that will break the logo on to new line.
+    width: calc( 2rem * 11 / 3 );
+}
+
+
+// ******* GLOBAL NAVIGATION STYLES *******
+// All you need to do is just give it the correct html structure and apply same classes to the elements.
+.hero__container-nav {
+    @include header-nav();
+}
+
+.hero__container-nav li {
+    @include header-li();
+}
+
+.hero__container-nav a {
+    @include header-a();
+}
+
+.hero__container-nav a:focus, .hero__container-nav a:hover {
+    @include header-hover-focus();
+}
+
+.hero__container-nav h3 {
+    @include header-logo-sizing();
 }
