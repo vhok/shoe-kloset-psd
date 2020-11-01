@@ -1,7 +1,7 @@
 .blog__body {
 
 
-// ******* PRIMARY CONTAINERS OF MAIN *******
+// ******* PRIMARY CONTAINERS *******
 header {
     background-image: url(./../shoe-kloset/blog-header.jpg);
     background-repeat: no-repeat;
@@ -18,7 +18,13 @@ header {
 
 
 // ******* FONT COLOUR AND POSITIONING *******
+h1 {
+    color: $plum;
+    text-transform: uppercase;
+}
 
-
+p {
+    padding-top: 2rem;
+}
     
 }

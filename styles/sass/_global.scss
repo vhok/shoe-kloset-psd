@@ -1,5 +1,5 @@
 // TEMPLATES FOR PARTIALS
-// ******* PRIMARY CONTAINERS OF MAIN *******
+// ******* PRIMARY CONTAINERS *******
 // ******* IMAGES *******
 // ******* NAVIGATION, MENUS, BUTTONS, ANCHORS *******
 // ******* FONT COLOUR AND POSITIONING *******
@@ -17,7 +17,7 @@ body, input, button, a {
     padding: 0;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: 'Pompiere', cursive;
     margin: 0;
     padding: 0;
@@ -60,6 +60,8 @@ html {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
+    position: relative;
+    z-index: 10;
 }
 
 @mixin header-li {
@@ -82,25 +84,42 @@ html {
     width: calc( 2rem * 11 / 3 );
 }
 
+// Footer
+@mixin footer-copywrite {
+    text-align: center;
+    background-color: $brown;
+    color: #fff;
+    padding: 7px 0;
+}
+
 
 // ******* GLOBAL NAVIGATION STYLES *******
 // All you need to do is just give it the correct html structure and apply same classes to the elements.
-.hero__container-nav {
+.hero__div-nav {
     @include header-nav();
 }
 
-.hero__container-nav li {
+.hero__div-nav li {
     @include header-li();
 }
 
-.hero__container-nav a {
+.hero__div-nav a {
     @include header-a();
 }
 
-.hero__container-nav a:focus, .hero__container-nav a:hover {
+.hero__div-nav a:focus, .hero__div-nav a:hover {
     @include header-hover-focus();
 }
 
-.hero__container-nav h3 {
+.hero__div-nav h3 {
     @include header-logo-sizing();
+}
+
+// ******* GLOBAL FOOTER STYLES *******
+.copywrite {
+    @include footer-copywrite();
+}
+
+.copywrite a {
+    color: #fff;
 }

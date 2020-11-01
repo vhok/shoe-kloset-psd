@@ -246,7 +246,7 @@ body, input, button, a {
   padding: 0;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Pompiere', cursive;
   margin: 0;
   padding: 0;
@@ -282,7 +282,7 @@ html {
   padding: 0 7%;
 }
 
-.hero__container-nav {
+.hero__div-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,25 +290,38 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 20px;
+  position: relative;
+  z-index: 10;
 }
 
-.hero__container-nav li {
+.hero__div-nav li {
   display: inline-block;
   margin: 0 10px;
 }
 
-.hero__container-nav a {
+.hero__div-nav a {
   color: black;
   padding: 5px 10px;
 }
 
-.hero__container-nav a:focus, .hero__container-nav a:hover {
+.hero__div-nav a:focus, .hero__div-nav a:hover {
   color: white;
   background-color: #4C0341;
 }
 
-.hero__container-nav h3 {
+.hero__div-nav h3 {
   width: calc( 2rem * 11 / 3);
+}
+
+.copywrite {
+  text-align: center;
+  background-color: #882C07;
+  color: #fff;
+  padding: 7px 0;
+}
+
+.copywrite a {
+  color: #fff;
 }
 
 p {
@@ -538,6 +551,18 @@ p {
   margin-bottom: 50px;
 }
 
+.home__body .popular .wrapper {
+  padding-top: 100px;
+  padding-bottom: 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home__body .popular__div-text {
+  padding-left: 100px;
+}
+
 .home__body .products__div-img-left, .home__body .products__div-img-right {
   width: 40vw;
   min-width: 450px;
@@ -559,7 +584,35 @@ p {
           box-shadow: -30px 25px #FE6F19;
 }
 
+.home__body .popular__div-bg-oxford {
+  background-image: url(./../shoe-kloset/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+}
+
+.home__body .popular__div-img-platform {
+  -ms-flex-preferred-size: 280px;
+      flex-basis: 280px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+  top: -30px;
+}
+
+.home__body .popular__div-img-platform img {
+  -webkit-box-shadow: 30px 30px #FE6F19;
+          box-shadow: 30px 30px #FE6F19;
+}
+
 .home__body .products a {
+  background-color: #882C07;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+
+.home__body .popular a {
   background-color: #882C07;
   color: white;
   text-transform: uppercase;
@@ -596,16 +649,8 @@ p {
   text-transform: uppercase;
 }
 
-.home__body .popular .wrapper {
-  padding-top: 100px;
-  padding-bottom: 85px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.home__body .popular__div-text {
-  padding-left: 100px;
+.home__body .popular p {
+  margin-bottom: 20px;
 }
 
 .home__body footer .wrapper {
@@ -617,46 +662,8 @@ p {
   padding-bottom: 85px;
 }
 
-.home__body .popular__div-bg-oxford {
-  background-image: url(./../shoe-kloset/banner.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 30vh;
-}
-
-.home__body .popular__div-img-platform {
-  -webkit-box-shadow: 30px 30px #FE6F19;
-          box-shadow: 30px 30px #FE6F19;
-  min-width: 280px;
-  max-height: 280px;
-  position: relative;
-  top: -30px;
-}
-
 .home__body footer .footer__div-img:nth-child(2) {
   margin: 0 35px;
-}
-
-.home__body .popular a {
-  background-color: #882C07;
-  color: white;
-  text-transform: uppercase;
-  padding: 10px 15px;
-}
-
-.home__body .popular p {
-  margin-bottom: 20px;
-}
-
-.home__body .copywrite {
-  text-align: center;
-  background-color: #882C07;
-  color: #fff;
-  padding: 7px 0;
-}
-
-.home__body .copywrite a {
-  color: #fff;
 }
 
 .blog__body header {
@@ -664,4 +671,157 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   height: 35vh;
+}
+
+.blog__body h1 {
+  color: #4C0341;
+  text-transform: uppercase;
+}
+
+.blog__body p {
+  padding-top: 2rem;
+}
+
+.blog__body main {
+  background-color: #FAE5FF;
+}
+
+.blog__body main .wrapper {
+  padding-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog__body .blog {
+  background-color: #fff;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.blog__body .blog__div-container {
+  padding-left: 35px;
+  position: relative;
+  top: -200px;
+}
+
+.blog__body .blog__div-text {
+  padding-left: 35px;
+  padding-bottom: 35px;
+  margin-top: -150px;
+}
+
+.blog__body .blog__div-text, .blog__body .comments__div-text {
+  padding-right: calc( 7% * ( 100 / 93 ) * ( 100 / 75 ));
+}
+
+.blog__body aside {
+  margin-top: 75px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.blog__body .aside__div-container {
+  margin-right: 50px;
+  padding-left: 20px;
+  padding-bottom: 25px;
+  background-color: #fff;
+}
+
+.blog__body .comments {
+  margin-left: auto;
+  width: 75%;
+}
+
+.blog__body .comments__div-text {
+  padding-bottom: 100px;
+  padding-left: 30px;
+}
+
+.blog__body .comments li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog__body .blog__div-img-pair {
+  width: 100%;
+  -webkit-box-shadow: -35px 35px #FE6F19;
+          box-shadow: -35px 35px #FE6F19;
+}
+
+.blog__body .aside__div-img-splash {
+  position: relative;
+  width: 130%;
+  right: 35%;
+  top: -15px;
+}
+
+.blog__body .comments__div-img-jeremy, .blog__body .comments__div-img-julia {
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.blog__body h2, .blog__body h4 {
+  color: #4C0341;
+  text-transform: uppercase;
+}
+
+.blog__body .blog h2 {
+  padding-top: 30px;
+}
+
+.blog__body .blog p:nth-of-type(2) {
+  padding-top: 0;
+}
+
+.blog__body aside p, .blog__body aside li {
+  padding-top: 5px;
+}
+
+.blog__body aside ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.blog__body aside li {
+  font-size: 1.5rem;
+}
+
+.blog__body aside h4 {
+  padding-top: 30px;
+}
+
+.blog__body .comments h2 {
+  padding: 25px 0;
+}
+
+.blog__body .comments p {
+  padding-top: 10px;
+  line-height: 1.5;
+}
+
+.blog__body time, .blog__body address {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.blog__body address {
+  display: inline-block;
+  font-style: normal;
+}
+
+.blog__body .comments a {
+  color: #000;
+}
+
+.blog__body footer p {
+  padding: 7px 0;
 }

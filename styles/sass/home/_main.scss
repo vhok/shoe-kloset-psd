@@ -51,7 +51,16 @@
         margin-left: 20px;
         margin-bottom: 50px;
     }
+    
+    .popular .wrapper {
+        padding-top: 100px;
+        padding-bottom: 85px;
+        display: flex;
+    }
 
+    .popular__div-text {
+        padding-left: 100px;
+    }
     // ******* IMAGES *******
     .products__div-img-left, .products__div-img-right {
         width: 40vw;
@@ -72,6 +81,23 @@
         box-shadow: -30px 25px $orange;
     }
 
+    .popular__div-bg-oxford {
+        background-image: url(./../shoe-kloset/banner.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 30vh;
+    }
+
+    .popular__div-img-platform {
+        flex-basis: 280px;
+        flex-shrink: 0;
+        position: relative;
+        top: -30px;
+    }
+
+    .popular__div-img-platform img {
+        box-shadow: 30px 30px $orange;
+    }
 
     // ******* NAVIGATION, MENUS, BUTTONS, ANCHORS *******
     .products a {
@@ -81,6 +107,12 @@
         padding: 10px 15px;
     }
 
+    .popular a {
+        background-color: $brown;
+        color: white;
+        text-transform: uppercase;
+        padding: 10px 15px;
+    }
     // ******* FONT COLOUR AND POSITIONING *******
     .products h2 {
         text-transform: uppercase;
@@ -109,5 +141,8 @@
     .outreach__ul-icons h2, .popular__div-text h2 {
         text-transform: uppercase;
     }
-    
+
+    .popular p {
+        margin-bottom: 20px;
+    } 
 }

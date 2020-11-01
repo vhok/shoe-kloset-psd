@@ -2,15 +2,7 @@
 .home__body {
 
     // ******* PRIMARY CONTAINERS OF MAIN *******
-    .popular .wrapper {
-        padding-top: 100px;
-        padding-bottom: 85px;
-        display: flex;
-    }
 
-    .popular__div-text {
-        padding-left: 100px;
-    }
 
     footer .wrapper {
         display: flex;
@@ -20,48 +12,14 @@
     }
 
     // ******* IMAGES *******
-    .popular__div-bg-oxford {
-        background-image: url(./../shoe-kloset/banner.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 30vh;
-    }
-
-    .popular__div-img-platform {
-        box-shadow: 30px 30px $orange;
-        min-width: 280px;
-        max-height: 280px;
-        position: relative;
-        top: -30px;
-    }
-
     footer .footer__div-img:nth-child(2) {
         margin: 0 35px;
     }
 
     // ******* NAVIGATION, MENUS, BUTTONS, ANCHORS *******
-    .popular a {
-        background-color: $brown;
-        color: white;
-        text-transform: uppercase;
-        padding: 10px 15px;
-    }
+
 
     // ******* FONT COLOUR AND POSITIONING *******
-    .popular p {
-        margin-bottom: 20px;
-    } 
-
-    .copywrite {
-        text-align: center;
-        background-color: $brown;
-        color: #fff;
-        padding: 7px 0;
-    }
-
-    .copywrite a {
-        color: #fff;
-    }
 
     
 }
