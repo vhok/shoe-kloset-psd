@@ -26,11 +26,11 @@ main .wrapper {
     margin-top: -150px;
 }
 
-.blog__div-text, .comments__div-text {
+.blog__div-text, .comments__div-text, form {
     // Ensures the article gives right dynamic padding % equivalent of wrapper.
     // FORMULA: (7% padding) * (ratio of wrapper to article) * (ratio of flex container to article).
     // Given time constraints, I couldn't figure out a better way to do this. I don't
-    // like this method. It seemed like math overkill and would be susceptable to breakage
+    // like this method. It seemed like arithmetic overkill and would be susceptable to breakage
     // on more complicated website layouts.
     padding-right: calc( 7% * ( 100 / 93 ) * ( 100 / 75 ) );
 }
@@ -44,8 +44,7 @@ aside {
 
 .aside__div-container {
     margin-right: 50px;
-    padding-left: 20px;
-    padding-bottom: 25px;
+    padding: 0 20px 25px;
     background-color: #fff;    
 }
 
@@ -72,7 +71,7 @@ aside {
 .aside__div-img-splash {
     position: relative;
     width: 130%;
-    right: 35%;
+    right: 25%;
     top: -15px;
 }
 
@@ -80,7 +79,59 @@ aside {
     flex-basis: 100px;
     flex-shrink: 0;
 }
-// ******* NAVIGATION, MENUS, BUTTONS, ANCHORS *******
+
+// ******* FORMS *******
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form__input-name, .form__input-email, .form__input-textarea {
+    font-size: 1.5rem;
+}
+
+.form__input-name::placeholder, 
+.form__input-email::placeholder, 
+.form__input-textarea::placeholder {
+    color: black;
+}
+
+.form__input-name, .form__input-email {
+    width: calc( 50% - 20px );
+    height: 35px;
+    border: none;
+    border-bottom: 2px solid $orange;
+    background-color: $mauve;
+    padding: 10px;
+}
+
+.form__input-name {
+    margin-right: 40px;
+}
+
+.form__input-textarea {
+    background-color: $mauve;
+    margin-top: 20px;
+    height: 150px;
+    width: 100%;
+    border: 2px solid $orange;
+    resize: none;
+    padding: 10px;
+}
+
+.form__input-submit {
+    width: 100%;
+    height: 35px;
+    background-color: $plum;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    align-self: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
 // ******* FONT COLOUR AND POSITIONING *******
 h2, h4 {
     color: $plum;
@@ -131,7 +182,7 @@ address {
     font-style: normal;
 }
 
-.comments a {
+.comments a, aside a, .blog a {
     color: #000;
 }
 

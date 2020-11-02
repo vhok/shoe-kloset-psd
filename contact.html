@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pompiere&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <title>Contact</title>
@@ -10,43 +11,54 @@
 <body class="contact__body">
     <header>
         <div class="wrapper">
-            <h3>Shoe Kloset</h3>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="hero__div-nav">
+                <h3 class="font--logo">Shoe Kloset</h3>
+                <nav class="hero__nav">
+                    <ul class="font--nav">
+                        <li><a href="./index.html">home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="./blog.html">blog</a></li>
+                        <li><a href="./contact.html">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
-        <nav>
-            <ul>
-                <li><a href="#"><i></i></a></li>
-                <li><a href="#"><i></i></a></li>
-                <li><a href="#"><i></i></a></li>
-                <li><a href="#"><i></i></a></li>
-            </ul>
-        </nav>
-        <h2>Info@email.com</h2>
-        <div class="address">
-            <p>123-456-7890</p>
-            <p>123 Queen Street West, Unit 10</p>
-            <p>Toronto, Ontario</p>
-            <p>M5V2D5</p>
-        </div>
+        <div class="wrapper">
+            <section class="contact">
+                <div class="contact__div-info">
+                    <nav class="contact__nav-social">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true" aria-label="Go to facebook page."></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram" aria-hidden="true" aria-label="Go to instagram page."></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter" aria-hidden="true" aria-label="Go to twitter page."></i></a></li>
+                            <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true" aria-label="Go to WhatsApp page."></i></a></li>
+                        </ul>
+                    </nav>
+                        <a href="mailto:">
+                            <h2>Info@email.com</h2>
+                        </a>
+                        <p>123-456-7890</p>
+                        <p>123 Queen Street West, Unit 10</p>
+                        <p>Toronto, Ontario</p>
+                        <p>M5V2D5</p>
+                </div>
 
-        <div>
-            <h1>Get in touch</h1>
-            <form>
-                <label for="name"></label>
-                <input type="text" name="name" id="name" placeholder="Name">
-                <label for="email"></label>
-                <input type="email" name="email" id="email" placeholder="Email addres">
-                <label for="message"></label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                <button type="submit">Submit</button>
-            </form>
+                <div class="contact__div-form">
+                    <h1 class="font--heading2">Get in touch</h1>
+                    <form>
+                        <label for="name" class="sr-only">Please enter your full name.</label>
+                        <input type="text" name="name" id="name" placeholder="Name" class="form__input-name" required>
+                        <label for="email" class="sr-only">Please enter your email address.</label>
+                        <input type="email" name="email" id="email" placeholder="Email address" class="form__input-email" required>
+                        <label for="message" class="sr-only">Please enter your message.</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" class="form__input-textarea" required></textarea>
+                        <button type="submit" class="form__input-submit">Submit</button>
+                    </form>
+                </div>
+            </section>
+
         </div>
     </main>
     <footer>

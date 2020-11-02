@@ -1,5 +1,8 @@
+// Common colour themes.
 $brown: #882C07;
 $mauve: #FAE5FF;
 $orange: #FE6F19;
 $plum: #4C0341;
+
+// Global wrapper size variable for "future proofing" in case device size requirements changes.
 $wrapper-max: 1600px;

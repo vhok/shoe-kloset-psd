@@ -128,13 +128,14 @@
     .outreach__ul-icons i {
         background-color: $plum;
         display: inline-block;
-        color: white;
+        color: #fff;
         border-radius: 50%;
-        text-align: center;
         font-size: 2.8rem;
-        min-height: 5.5rem;
-        min-width: 5.5rem;
+        flex-shrink: 0;
+        // These two lines below will automatically center the text element. It's become my favourite trick with text elements.
+        flex-basis: 5.5rem;
         line-height: 5.5rem;
+        text-align: center;
         align-self: flex-start;
     }
 

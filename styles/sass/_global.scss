@@ -2,7 +2,14 @@
 // ******* PRIMARY CONTAINERS *******
 // ******* IMAGES *******
 // ******* NAVIGATION, MENUS, BUTTONS, ANCHORS *******
+// ******* FORM STYLING ********
 // ******* FONT COLOUR AND POSITIONING *******
+
+// ******* GENERAL NOTE *******
+// I've wrapped all the page partials in "body classes" in order to prevent unintentional modification between pages.
+// (ie changing blog's h1 would not impact home's h1 unless we explicitly applied it in the global partials.)
+// Any intentionally shared styles should only be accomplished through global styles, typography, etc... (eg main nav bar)
+// This also makes it easier to identify and track where all the shared styles are located.
 
 
 // ******* GLOBAL DEFAULT STYLE DECLARATIONS *******
@@ -84,7 +91,7 @@ html {
     width: calc( 2rem * 11 / 3 );
 }
 
-// Footer
+// copywrite
 @mixin footer-copywrite {
     text-align: center;
     background-color: $brown;
@@ -115,7 +122,7 @@ html {
     @include header-logo-sizing();
 }
 
-// ******* GLOBAL FOOTER STYLES *******
+// ******* GLOBAL COPYWRITE STYLES *******
 .copywrite {
     @include footer-copywrite();
 }

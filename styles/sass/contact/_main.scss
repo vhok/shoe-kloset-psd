@@ -1,3 +1,102 @@
 .contact__body {
 
+// ******* PRIMARY CONTAINERS *******
+main {
+    background-color: $mauve;
+    // Make the contact page a clean one-pager. 
+    // No vertical scroll.
+    height: calc( 50vh - 21px - 1.5rem );
+    // Note: The absence of vertical scroll bar increases viewport width for equally sized website window.
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.contact__div-form {
+    position: relative;
+    top: -230px;
+    right: -70px;
+}
+
+// ******* NAVIGATION, MENUS, BUTTONS, ANCHORS *******
+.contact__nav-social li {
+    display: inline-block;
+    margin: 6px;
+}
+
+.contact__nav-social a {
+    font-size: 1.5rem;
+    color: $plum;
+}
+
+// ******* FORMS *******
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fff;
+    width: 95%;
+    padding-bottom: 40px;
+    padding-top: 65px;
+    box-shadow: -27px 27px $orange;
+}
+
+.form__input-name, .form__input-email, .form__input-textarea {
+    font-size: 1.5rem;
+}
+
+.form__input-name, .form__input-email {
+    width: calc( 44% - 20px );
+    height: 35px;
+    border: none;
+    border-bottom: 2px solid $orange;
+    padding: 10px;
+}
+
+.form__input-name::placeholder, 
+.form__input-email::placeholder, 
+.form__input-textarea::placeholder {
+    color: black;
+}
+
+.form__input-name {
+    margin-right: 40px;
+}
+
+.form__input-textarea {
+    margin-top: 30px;
+    height: 150px;
+    width: 88%;
+    border: 2px solid $orange;
+    resize: none;
+    padding: 10px;
+
+}
+
+.form__input-submit {
+    width: 88%;
+    height: 35px;
+    background-color: $brown;
+    margin-top: 30px;
+    align-self: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+// ******* FONT COLOUR AND POSITIONING *******
+
+h1, h2 {
+    text-transform: uppercase;
+    color: $plum;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 15px 0;
+}
+
+
 }
