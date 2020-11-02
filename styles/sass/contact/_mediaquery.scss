@@ -1,0 +1,42 @@
+.contact__body {
+    @media (max-width: $mobile-max) {
+        // ******* PRIMARY CONTAINERS *******
+        main {
+            height: auto;
+            padding: 30px 0;
+        }
+
+        .contact {
+            flex-wrap: wrap;
+        }
+
+        .contact__div-form {
+            position: static;
+            order: -1;
+            margin-bottom: 20px;
+        }
+
+        // ******* FORMS *******
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            width: 100%;
+            box-shadow: -10px 10px $orange;
+        }
+
+        .form__input-name, .form__input-email {
+            width: 88%;
+            height: 35px;
+            border: none;
+            border-bottom: 2px solid $orange;
+            padding: 10px;
+        }
+
+        .form__input-name {
+            margin-right: 0;
+        }
+        
+    }
+}

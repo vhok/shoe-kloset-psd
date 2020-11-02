@@ -7,10 +7,16 @@
 @import './home/main';
 @import './home/footer';
 
+
 @import './blog/header';
 @import './blog/main';
 @import './blog/footer';
 
+
 @import './contact/header';
 @import './contact/main';
 @import './contact/footer';
+
+@import './contact/mediaquery';
+@import './home/mediaquery';
+@import './blog/mediaquery';

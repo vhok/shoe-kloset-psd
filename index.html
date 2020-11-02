@@ -14,12 +14,26 @@
                 <div class="wrapper">
                     <div class="hero__div-nav">
                         <h3 class="font--logo">Shoe Kloset</h3>
-                        <nav class="hero__nav">
+                        <nav class="hero__nav-desktop mobile--hidden">
                             <ul class="font--nav">
                                 <li><a href="./index.html">home</a></li>
                                 <li><a href="#about">about</a></li>
                                 <li><a href="./blog.html">blog</a></li>
                                 <li><a href="./contact.html">contact</a></li>
+                            </ul>
+                        </nav>
+
+                        <nav class="hero__nav-mobile desktop--hidden">
+                            <label for="btn--toggle">
+                                <i class="fas fa-bars" aria-hidden="true" aria-label="Dropdown menu"></i>
+                            </label>
+                            <input type="checkbox" id="btn--toggle" name="btn--toggle" class="btn--toggle" />
+                        
+                            <ul class="hero__ul-mobile">
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="./blog.html">Blog</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
                             </ul>
                         </nav>
                     </div>

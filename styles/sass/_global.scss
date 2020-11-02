@@ -122,6 +122,20 @@ html {
     @include header-logo-sizing();
 }
 
+.desktop--hidden {
+    display: none;
+}
+
+@media (max-width: $mobile-max) {
+    .mobile--hidden {
+        display: none;
+    }
+    
+    .desktop--hidden {
+        display: block;
+    }
+}
+
 // ******* GLOBAL COPYWRITE STYLES *******
 .copywrite {
     @include footer-copywrite();
@@ -129,4 +143,49 @@ html {
 
 .copywrite a {
     color: #fff;
+}
+
+// RECYCLED OLD CODE FROM PROJECT 1 HAMBURGER MENU
+@media (max-width: $mobile-max) {
+    .hero__nav-mobile {
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 20px 20px 0 0;
+    }
+
+    .hero__nav-mobile i {
+        font-size: 3rem;
+    }
+
+    .hero__ul-mobile {
+        background-color: $mauve;
+        position: fixed;
+        right: -100vw;
+        z-index: -10;
+        text-align: right;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+
+    .hero__ul-mobile li {
+        display: block;
+        font-size: 3rem;
+    }
+
+    .btn--toggle {
+        opacity: 0;
+        position: absolute;
+        top: -18px;
+        right: -11px;
+        height: 58px;
+        width: 58px;
+    }
+
+    .btn--toggle:checked + .hero__ul-mobile {
+        /* To create padding for ul to share with background color with. */
+        padding-top: 58px;
+        top: 0;
+        right: 0;
+    }
 }

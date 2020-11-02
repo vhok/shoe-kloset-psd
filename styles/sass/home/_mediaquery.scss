@@ -1,0 +1,220 @@
+.home__body {
+
+
+    @media (max-width: $tablet-max) {
+        // ******* HEADER *******
+        .hero {
+            background-position-x: 49%;
+        }
+
+        .hero__nav-desktop ul {
+            text-align: right;
+        }
+
+        .hero__nav-desktop li {
+            width: 51%;
+        }
+
+        .hero {
+            display: relative;
+        }
+
+        .hero__div-img-shoe-balls {
+            top: 25%;
+            width: 40vw;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            width: calc( 5rem * 18 / 6);
+            line-height: 0.75;
+            margin-top: 205px;
+            padding-bottom: 10px;
+            position: relative;
+        }
+
+        .info h2 {
+            font-size: 3.5rem;
+            color: $plum;
+            text-transform: uppercase;
+        }
+
+
+    // ******* MAIN *******
+        .products .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .products__div-text-left, .products__div-text-right {
+            width: 100%;
+            padding: 25px 0;
+        }
+
+        .products__div-text-right {
+            padding: 30px 0;
+        }
+
+        .popular .wrapper {
+            flex-wrap: wrap;
+        }
+
+        .popular__div-text {
+            padding-left: 0;
+        }
+        // // ******* IMAGES *******
+        .products__div-img-left, .products__div-img-right {
+            position: relative;
+            top: 0;
+        }
+
+        .products__div-img-right {
+            margin: 0;
+            margin-left: auto;
+        }
+
+        .popular__div-bg-oxford {
+            background-position-x: 30%;
+        }
+
+        .outreach__ul-icons h2, .popular__div-text h2 {
+            font-size: 3rem;
+        }
+        
+        footer .wrapper {
+            padding: 30px 7%;
+        }
+
+        // ******* IMAGES *******
+        footer .footer__div-img:nth-child(2) {
+            margin: 0 10px;
+        }
+
+
+    }
+
+    @media (max-width: $mobile-max) {
+        // ******* HEADER *******
+        .hero {
+            min-height: 50vh;
+            background-position-x: 45%;
+        }
+
+        .hero .wrapper {
+            height: 100%;
+        }
+
+        .hero h1 {
+            font-size: 5rem;
+            width: calc( 4rem * 18 / 6);
+            line-height: 0.75;
+
+            margin: 0;
+            padding: 0;
+            margin: 20vh 20px 0 auto;
+        }
+
+        h2.font--heading4 {
+            font-size: 3rem;
+        }
+
+        .hero__div-img-shoe-balls {
+            position: absolute;
+            left: 0;
+            top: 33vh;
+            width: 20vh;
+
+            transform: rotate(180deg);
+            
+        }
+
+        // ******* MAIN *******
+        .products .wrapper {
+            margin: 50px 0;
+        }
+
+        .products__div-img-left, .products__div-img-right {
+            min-width: 0;
+            width: 50vw;
+            position: static;
+            margin: 15px 25px;
+        }
+
+        .products__div-img-left {
+            box-shadow: 15px 15px $orange;
+            float: left;
+        }
+
+        .products__div-img-right {
+            box-shadow: -15px 15px $orange;
+            float: right;
+        }
+
+        .products .wrapper {
+            display: block;
+        }
+
+        .products__div-text-left, .products__div-text-right {
+            width: 100%;
+            padding: 0;
+        }
+
+        .products h2 {
+            font-size: 2.2rem;
+        }
+
+        .products p {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+        .outreach {
+            background-color: $mauve;
+            padding-top: 50px;
+        }
+
+        .outreach__ul-icons li {
+            width: 100%;
+        }
+
+        .outreach__ul-icons h2, .popular__div-text h2 {
+            font-size: 3rem;
+        }
+        
+        .popular__div-bg-oxford {
+            background-position-x: 30%;
+        }
+
+        .popular .wrapper {
+            padding: 0 7%;
+            padding-top: 50px;
+            display: block;
+        }
+
+        .popular__div-text {
+            padding-left: 0;
+            margin: 50px 0;
+            margin-left: 20px;
+        }
+
+        .popular__div-img-platform {
+            width: 100%;
+            position: static;
+        }
+
+        .popular__div-img-platform img {
+            box-shadow: 15px 15px $orange;
+        }
+
+        footer .wrapper {
+            flex-direction: column;
+            padding: 0;
+        }
+
+        footer .footer__div-img:nth-child(2) {
+            margin: 0;
+        }
+
+    }
+
+}
